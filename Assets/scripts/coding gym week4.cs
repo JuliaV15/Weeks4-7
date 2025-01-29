@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class codinggymweek4 : MonoBehaviour
 {
+    public GameObject go;
     public AudioSource audioSource;
     public AudioClip clip;
 
@@ -20,11 +22,18 @@ public class codinggymweek4 : MonoBehaviour
         {
             if (audioSource.isPlaying == false)
             {
-                // audioSource.Play();
                 audioSource.PlayOneShot(clip);
-
-                
             }
+        }
+
+        if (audioSource.isPlaying == false)
+        {
+            go.SetActive(false);
+        }
+
+        if (audioSource.isPlaying == true)
+        {
+            go.SetActive(true);
         }
     }
 }
