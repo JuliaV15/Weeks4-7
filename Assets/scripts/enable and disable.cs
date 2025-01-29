@@ -8,6 +8,7 @@ public class enableanddisable : MonoBehaviour
     public SpriteRenderer sr;
     public EnableDisable script;
     public AudioSource audioSource;
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,8 @@ public class enableanddisable : MonoBehaviour
         {
             if (audioSource.isPlaying == false)
             {
-                audioSource.Play();
+                // audioSource.Play();
+                audioSource.PlayOneShot(clip);
             }
             
         }
