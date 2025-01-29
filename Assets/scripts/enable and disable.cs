@@ -6,7 +6,7 @@ public class enableanddisable : MonoBehaviour
 {
     public GameObject go;
     public SpriteRenderer sr;
-    public EnableDisable script;
+    public enableanddisable script;
     public AudioSource audioSource;
     public AudioClip clip;
 
