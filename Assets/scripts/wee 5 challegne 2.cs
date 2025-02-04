@@ -6,7 +6,7 @@ public class wee5challegne2 : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clip;
-    int movementspeed = 5;
+    int movementspeed = 120;
     Vector3 vector3;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class wee5challegne2 : MonoBehaviour
 
         if (audioSource.isPlaying == true)
         {
-            transform.Rotate(movementspeed * Time.deltaTime * vector3);
+            transform.Rotate(movementspeed * Time.deltaTime * -Vector3.forward, Space.Self);
         }
     }
 }
