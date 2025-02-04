@@ -16,7 +16,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t += Time deltaTime;
-        slider.value = 
+       // t += Time deltaTime;
+       // slider.value = 
     }
 }
