@@ -12,8 +12,8 @@ public class button : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bbutton = GetComponent<Button>();
-        bbutton.onClick.AddListener(OnClick);
+        bbutton = GetComponent<Button>(); // references the button component
+        bbutton.onClick.AddListener(OnClick); // adds the on click to the button component
     }
 
     // Update is called once per frame
@@ -21,14 +21,14 @@ public class button : MonoBehaviour
     {
         
     }
-    public void OnClick()
+    public void OnClick() // this is so that all the instantiating only happens when the button is clicked
     {
         Debug.Log("Clicked!");
 
         purpleprefab.SetActive(true);
 
-        Instantiate(purpleprefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(purpleprefab, new Vector3(0, 0, 0), Quaternion.identity); // instantiates the prefab and spawns it at a set location every time
 
-        purpleprefab.SetActive(false);
+        purpleprefab.SetActive(false); // deactivates the prefab so that it does not spawn infintie purple clnoes (I accidentally did that and blew up my pc)
     }
 }
