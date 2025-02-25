@@ -10,13 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 6811864957782309187}
   - component: {fileID: 7825598404865077196}
+  - component: {fileID: 3070916097124720643}
+  - component: {fileID: 2005678379184488547}
   m_Layer: 0
   m_Name: hollow purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6811864957782309187
 Transform:
   m_ObjectHideFlags: 0
@@ -84,3 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3070916097124720643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076079979166077970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c89043942682d408e6228903c4ad26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2005678379184488547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076079979166077970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69135453bf1cc48ba107dfa542a4d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

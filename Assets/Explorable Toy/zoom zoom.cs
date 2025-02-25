@@ -15,6 +15,7 @@ public class zoomzoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // this makes the clones move right constantly, so it looks like they shoot off screen
         Vector3 pos = transform.position;
         pos.x += speed * Time.deltaTime;
 

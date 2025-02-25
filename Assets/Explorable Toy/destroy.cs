@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroy : MonoBehaviour
+class destroy : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 3); // destroy the clones 3 sec after they are spawned
     }
 
     // Update is called once per frame
