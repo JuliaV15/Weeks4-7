@@ -15,7 +15,8 @@ public class surprise : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { // if you press space, it will play an audio clip assigned to audio source
+        // my audio is broken a bit so not sure if this code is bugged or what because I literally cannot find why there is no audio playing :(
         if (Input.GetKey(KeyCode.Space))
         { 
             audioSource.PlayOneShot(clip); 
